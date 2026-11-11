@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+<div class="container">
+    <h1>Weatherly</h1>
+    <p class="subtitle">Your daily weather at a glance</p>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="enter-city"
+            placeholder="Enter a city..."
+        >
+        <button id="search-button">Search</button>
+    </div>
+
+    <h2 id="city-name">Search for a city</h2>
+    <div id="weather-icon" class="weather-icon">🌤️</div>
+    <p id="loading-message"></p>
+    <p id="weather-description">Your weather starts here!</p>
+    <h3 id="temperature">-- °C</h3>
+
+    <div class="weather-details">
+        <div class="weather-item">
+            <p>Humidity</p>
+            <h4 id="humidity">-- %</h4>
+        </div>
+
+        <div class="weather-item">
+            <p>Wind Speed</p>
+            <h4 id="wind-speed">-- km/h</h4>
+        </div>
+    </div>
+
+    <div class="forecast-card">
+    <h3>Tonight's forecast🌙</h3>
+    <p id="forecast-message">Search a city for tonight's forecast.</p>
+    <p id="rain-chance">Chance of rain: -- %</p>
+</div>
+
+<div class="three-day-forecast">
+    <h3>3-Day Forecast 📅</h3>
+
+    <div id="daily-forecast" class="daily-forecast">
+        <!-- JavaScript will add forecast cards here -->
+    </div>
+</div>
+
+<p id="error-message"></p>
+</div>
+
+
+</body>
+</html>
